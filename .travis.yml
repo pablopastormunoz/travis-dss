@@ -14,6 +14,9 @@ script:
     - pytest -v -rs hello_test.py
 
 notifications:
+    slack:
+      on_success: always
+      on_failure: always
     email:
       recipients:
           - pablo.pastormunoz@alum.uca.es
