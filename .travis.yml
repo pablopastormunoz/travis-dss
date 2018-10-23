@@ -3,6 +3,12 @@ language: python
 python:
 
     - "2.7"
+
+install:
+
+    - pip install pytest
+
 script:
 
     - python hello.py
+    - pytest -v -rs hello-test.py
