@@ -12,3 +12,10 @@ script:
 
     - python hello.py
     - pytest -v -rs hello_test.py
+
+notifications:
+    email:
+      recipients:
+          - pablo.pastormunoz@alum.uca.es
+      on_success: never
+      on_failure: always
